@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+        <div class="w-75 m-auto">
+            <label for="productname">productName</label>
+            <input type="text" class="form-control" id="productname">
+            <label for="productprice">productprice</label>
+            <input type="number" class="form-control" id="productprice">
+            <label for="productcategory">productcategory</label>
+            <input type="text" class="form-control" id="productcategory">
+            <label for="productDesc">productDesc</label>
+            <input type="text" class="form-control" id="productDesc">
+            <button id="addBtn" class="btn btn-danger w-100" onclick="addproduct()"> addproduct </button>
+        </div>
+       <div class="saerch-div w-75 m-auto  mt-5">
+        <label for="search">search...</label>
+        <input onkeyup="search(this.value)" type="text" class="form-control  m-auto mt-4 " placeholder="search.." id="search">
+       </div>
+
+       <div class="w-75 m-auto bg-dark text-white" >
+           <table class="table mt-5 text-white">
+               <thead>
+                  <th>index</th>
+                  <th>productName</th>
+                  <th>productPrice</th>
+                  <th>indeproductcategory</th>
+                  <th>productDesc</th>
+                  <th>update</th>
+                  <th>delete</th>
+               </thead>
+               <tbody id="row">
+                  
+               </tbody>
+           </table>
+       </div>
+        
+   <script src="index.js"></script>
+    </body>
+</html>
